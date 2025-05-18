@@ -6,7 +6,6 @@ import { ShieldCheck, Search, FileCheck2, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  // Animation variants for fade-in effect
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -14,7 +13,6 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 text-gray-900">
-      {/* Header */}
       <header className="bg-blue-700 text-white shadow-lg sticky top-0 z-50">
         <div className="mx-auto max-w-7xl flex justify-between items-center px-4 py-4 sm:px-6 lg:px-8">
           <h1 className="text-2xl font-bold tracking-tight flex items-center gap-2">
@@ -31,7 +29,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section with Background Image */}
       <section
         className="relative bg-cover bg-center bg-no-repeat text-white"
         style={{
@@ -86,7 +83,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works Section */}
+      
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <motion.h3
           className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12"
@@ -152,7 +149,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="bg-blue-700 text-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.h3
@@ -182,7 +178,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
+      
       <footer className="bg-gray-900 text-white py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p>© 2025 CitizenVoice, Government of Rwanda. All rights reserved.</p>
