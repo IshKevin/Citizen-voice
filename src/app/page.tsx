@@ -23,7 +23,7 @@ export default function Home() {
               <Link href="/submit-complaint">Submit Complaint</Link>
             </Button>
             <Button asChild variant="ghost" className="text-white hover:text-yellow-400 hover:bg-blue-800 transition-colors">
-              <Link href="/auth/login">Login / Register</Link>
+              <Link href="/auth">Login / Register</Link>
             </Button>
           </nav>
         </div>
