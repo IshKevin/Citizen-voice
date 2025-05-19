@@ -18,11 +18,11 @@ import {
   export const users = pgTable(
     "users",
     {
-      id: uuid("id").primaryKey().defaultRandom(), // UUID via uuid_generate_v4()
-      kindeId: text("kinde_id").notNull().unique(), // Kinde user ID
+      id: uuid("id").primaryKey().defaultRandom(), 
+      kindeId: text("kinde_id").notNull().unique(),
       email: text("email").notNull(),
       name: text("name"),
-      role: text("role").notNull().default("citizen"), // 'citizen' or 'admin'
+      role: text("role").notNull().default("citizen"), // citizen and admin
       createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
       updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
     },
